@@ -1,5 +1,5 @@
 # server.py
-from mcp.server.fastmcp import fastmcp
+from mcp.server.fastmcp import FastMCP
 from mcp.server.fastmcp.prompts import base
 
 # Create an MCP server instance with a custom name
@@ -28,7 +28,7 @@ def get_greeting(name: str) -> str:
     :return: A personalized greeting
     """
 
-    returnn f"Hello, {name}!"
+    return f"Hello, {name}!"
 
 @mcp.prompt()
 def review_code(code: str) -> str:
